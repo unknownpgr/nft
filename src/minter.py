@@ -8,13 +8,13 @@ from api.metaplex_api import MetaplexAPI
 from cryptography.fernet import Fernet
 
 SERVER_DECRYPTION_KEY = Fernet.generate_key().decode("ascii")
-PRIVATE_KEY_PATH = '/app/key.json'
-PUBLIC_KEY = 'A63PnxYoXVoZR55xXK9t8zDefh2Shk3oHQuZ39oeu2jF'
+KEY_PATH = '/key.json'
 
-with open(PRIVATE_KEY_PATH,'r') as f:
-  PRIVATE_KEY = json.load(f)
-  PRIVATE_KEY = bytes(PRIVATE_KEY)
+with open(KEY_PATH,'r') as f:
+  KEY = json.load(f)
+  PRIVATE_KEY = bytes(KEY['private_key'])
   PRIVATE_KEY = base58.b58encode(PRIVATE_KEY)
+  PUBLIC_KEY = KEY['address']
 
 cfg = {
     "PRIVATE_KEY": PRIVATE_KEY,
