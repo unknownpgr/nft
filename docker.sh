@@ -1,2 +1,1 @@
-docker build -t solana-env .
-docker run --rm -it -v $(pwd)/src:/app -w /app -p 82:3000 solana-env /bin/bash
+docker run --rm -it -v $(pwd)/src:/app -v $(pwd)/key.json:/key.json:ro -w /app -p 82:3000 solana-env /bin/bash
