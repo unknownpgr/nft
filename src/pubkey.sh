@@ -1,1 +1,0 @@
-solana-keygen pubkey
