@@ -1,14 +1,13 @@
-import sys
-from os import path
-sys.path.append(path.abspath('/python-api'))
-import base58
-from api.metaplex_api import MetaplexAPI
-from cryptography.fernet import Fernet
-from solana.keypair import Keypair
+import json
 
-account = Keypair()
-cfg = {"PRIVATE_KEY": base58.b58encode(account.seed).decode("ascii"), "PUBLIC_KEY": str(account.public_key), "DECRYPTION_KEY": Fernet.generate_key().decode("ascii")}
-metaplex = MetaplexAPI(cfg)
-wallet = metaplex.wallet()
+with open("output.txt","r",encoding="utf-8") as f:
+  address = f.read()
+address = address.split("pubkey: ")[1].split("\n")[0]
 
-print(wallet)
+with open("secret.json","r",encoding="utf-8") as f:
+  secret = json.load(f)
+
+print(json.dumps({
+  "address":address,
+  "private_key":secret
+}))

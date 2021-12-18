@@ -2,4 +2,5 @@ FROM solana-env
 
 WORKDIR /app
 ADD ./src /app
-CMD [ "python", "account.py" ]
+RUN chmod 700 ./run.sh
+CMD [ "/bin/bash", "run.sh" ]
