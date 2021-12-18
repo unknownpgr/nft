@@ -1,6 +1,6 @@
 # NFT Automation With Solana / Metaplex
 
-The goal of this project is to automate publishing of Non-fungible token (NFT) via dockerizing Metaplex API.
+The goal of this project is to automate publishing of Non-fungible token (NFT) by dockerizing Metaplex API.
 
 ## Project Structure
 
