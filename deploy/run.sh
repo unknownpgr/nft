@@ -1,0 +1,1 @@
+docker run --rm -v $(pwd)/assets:/assets -v $(pwd)/wallet.json:/wallet.json:ro solana-deploy $1
