@@ -1,0 +1,1 @@
+docker run --rm -it -v $(pwd)/wallet.json:/wallet.json:ro solana-airdrop
