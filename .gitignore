@@ -2,3 +2,7 @@ private.json
 .cache
 .config
 /*.json
+wallet.json
+secret.json
+account.json
+assets
