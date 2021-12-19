@@ -28,9 +28,21 @@ Follow the instructions below to check your NFT
 
 1. Add [Phantom wallet](https://phantom.app/) to your browser.
 1. Add created wallet to Phantom wallet.
-    1. Open `wallet.json` file and copy 'private_key' part, which is a long array of numbers like `[100, 34, 15, ..., 32]`
-    1. Click top-left menu at Phantom browser extension.
-    1. Click `add/connection wallet` menu.
-    1. Click `Import private key` menu.
-    1. Paste private key.
+   1. Open `wallet.json` file and copy 'private_key' part, which is a long array of numbers like `[100, 34, 15, ..., 32]`
+   1. Click top-left menu at Phantom browser extension.
+   1. Click `add/connection wallet` menu.
+   1. Click `Import private key` menu.
+   1. Paste private key.
 1. Then, click collectible menu, (⊞) and you can see the published NFTs.
+
+## My NFTs
+
+![Deadong River Water](./imgs/img.png)
+
+My NFT `Deadong River Water` series is **FOR SALE**! Contact to [unknownpgr@gmail.com](unknownpgr@gmail.com) to buy one. Below are some samples!
+
+- [Deadong River from 0km to 10km](https://solscan.io/token/B15HEhFdAQ7nDHTkaVbtJMuofQcsTRyFmX5Md4KKSZSL?cluster=devnet)
+- [Deadong River from 10km to 20km](https://solscan.io/token/DuJhb4QPLiTYAsUir7ktFzn4PNMCHWAH7nDfnGT28SLA?cluster=devnet)
+- [Deadong River from 20km to 30km](https://solscan.io/token/HcUA7PZw3R8VkoEvU4YHpwHqYLj7DyAeerhMZLgvrqDp?cluster=devnet)
+
+> These NFTs are not on mainnet but devnet. Therefore, it is pointless to trade using SOL, but you can still trade using dollars or KR won.
