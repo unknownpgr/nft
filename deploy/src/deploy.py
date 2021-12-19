@@ -5,6 +5,7 @@ import sys
 
 ASSET_PATH = '/assets'
 WALLET_PATH = '/wallet.json'
+COUNT_PATH = '/count'
 
 def get_asset_json(name, image_name, wallet):
   print(name)
@@ -33,6 +34,7 @@ def generate_asset_json(wallet):
   print('Create NFT of', wallet)
 
   assets = os.listdir(ASSET_PATH)
+  count = 0
 
   for asset_file_name in assets:
     asset_path =Path(asset_file_name) 
@@ -45,9 +47,15 @@ def generate_asset_json(wallet):
     asset_json = get_asset_json(asset_name, asset_file_name, wallet)
     with open(os.path.join(ASSET_PATH, f'{asset_name}.json'),'w') as f:
       json.dump(asset_json,f)
+    count+=1
+
+  return count
 
 with open(WALLET_PATH) as f:
   wallet = json.load(f)
 
 print('Start minting...')
-generate_asset_json(wallet['address'])
+count = generate_asset_json(wallet['address'])
+
+with open(COUNT_PATH,'w') as f:
+  f.write(f'{count}')
