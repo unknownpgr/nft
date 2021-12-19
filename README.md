@@ -1,6 +1,6 @@
 # NFT Automation With Solana / Metaplex
 
-The goal of this project is to automate publishing of Non-fungible token (NFT) via dockerizing Metaplex API.
+The goal of this project is to automate publishing of Non-fungible token (NFT) by dockerizing Metaplex API.
 
 ## Project Structure
 
@@ -9,7 +9,7 @@ As you can see in root directory of this repository, there are four main docker 
 - `solana-account` for creating account.
 - `solana-airdrop` for geting SOL airdrop.
 - `solana-deploy` for publishing NFT. This is the main image.
-- `solana-envirnment` for common environment. Other images are based on this image.
+- `solana-environment` for common environment. Other images are based on this image.
 
 > Don't care about `scripts` directory. That is just some script snippets of Metaplex CLI.
 
